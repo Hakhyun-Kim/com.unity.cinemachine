@@ -4,6 +4,22 @@ All notable changes to this package will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## UNRELEASED
+- Bugfix: Confiner2D confines to midpoint when camera window is bigger than the axis aligned bounding box of the input confiner.
+
+
+## [2.9.0-pre.7] - 2022-03-29
+- Bugfix: memory leak with PostProcessing if no PP layer is present on the camera
+- Bugfix: Standalone profiler no longer crashed with CM.
+- Bugfix: Cinemachine does not produce compiler error in unity editor versions older than 2020, when Input System package is installed.
+- Bugfix: EmbeddedAssetProperties were not displayed correctly in the editor.
+- Timeline guards added to scripts that rely on it.
+- Bugfix: SaveDuringPlay works with ILists now.
+- Bugfix: CinemachineInputProvider now correctly tracks enabled state of input action
+- Bugfix: POV orientation was incorrect with World Up override
+- Added AutoEnable option to CinemachineInputHandler
+
+
 ## [2.9.0-pre.6] - 2022-01-12
 - Bugfix: Negative Near Clip Plane value is kept when camera is orthographic.
 - Regression fix: could not change the projection of the main camera if a CM virtual camera is active.
